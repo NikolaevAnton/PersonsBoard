@@ -13,13 +13,15 @@ struct ImagesListView: View {
     var body: some View {
         NavigationView {
             List(persons) { person in
-                HStack {
-                    Image(person.photo)
-                        .resizable()
-                        .frame(width: 80, height: 80)
-                    Text("\(person.fullName)")
-                    Spacer()
-                    Text("\(person.id)")
+                NavigationLink(destination: FullInfoView(person: person)) {
+                    HStack {
+                        Image(person.photo)
+                            .resizable()
+                            .frame(width: 80, height: 80)
+                        Text("\(person.fullName)")
+                        Spacer()
+                        Text("\(person.id)")
+                    }
                 }
             }
             .navigationTitle("Список персонажей")

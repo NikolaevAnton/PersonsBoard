@@ -11,13 +11,15 @@ struct PhotoAlbumView: View {
     let persons: [Person]
     
 
-    private func getPhoto(rows: Int, columns: Int) -> Image {
-        let number = rows * 3 + columns
-        print("rows: \(rows) columuns: \(columns) Number: \(number)")
-        if number > 9 {
+    private func getIdPerson(rows: Int, columns: Int) -> Int {
+        rows * 3 + columns
+    }
+    
+    private func getPhoto(id: Int) -> Image {
+        if id > 9 {
             return Image(systemName: "leaf")
         }
-        return Image(persons[number].photo)
+        return Image(persons[id].photo)
                          
     }
     
@@ -27,7 +29,7 @@ struct PhotoAlbumView: View {
                 ForEach(0..<4){ rows in
                     HStack {
                         ForEach(0..<3) { columns in
-                            getPhoto(rows: rows, columns: columns)
+                            getPhoto(id: getIdPerson(rows: rows, columns: columns))
                                 .resizable()
                             .frame(width: 100, height: 100)
                         }

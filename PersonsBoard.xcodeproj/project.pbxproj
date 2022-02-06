@@ -16,6 +16,7 @@
 		4E9BC6EE27AFB06C00AADD6F /* ImagesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BC6ED27AFB06C00AADD6F /* ImagesListView.swift */; };
 		4E9BC6F027AFB36A00AADD6F /* PhotoAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BC6EF27AFB36A00AADD6F /* PhotoAlbumView.swift */; };
 		4E9BC6F227AFB5EC00AADD6F /* PersonsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BC6F127AFB5EC00AADD6F /* PersonsListView.swift */; };
+		4E9BC6F427AFD3BC00AADD6F /* FullInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9BC6F327AFD3BC00AADD6F /* FullInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		4E9BC6ED27AFB06C00AADD6F /* ImagesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListView.swift; sourceTree = "<group>"; };
 		4E9BC6EF27AFB36A00AADD6F /* PhotoAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumView.swift; sourceTree = "<group>"; };
 		4E9BC6F127AFB5EC00AADD6F /* PersonsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListView.swift; sourceTree = "<group>"; };
+		4E9BC6F327AFD3BC00AADD6F /* FullInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				4E9BC6ED27AFB06C00AADD6F /* ImagesListView.swift */,
 				4E9BC6EF27AFB36A00AADD6F /* PhotoAlbumView.swift */,
 				4E9BC6F127AFB5EC00AADD6F /* PersonsListView.swift */,
+				4E9BC6F327AFD3BC00AADD6F /* FullInfoView.swift */,
 				4E6BE3B627AEB95C007B953D /* Assets.xcassets */,
 				4E6BE3B827AEB95C007B953D /* Preview Content */,
 			);
@@ -175,6 +178,7 @@
 				4E6BE3B327AEB95A007B953D /* PersonsBoardApp.swift in Sources */,
 				4E9BC6EE27AFB06C00AADD6F /* ImagesListView.swift in Sources */,
 				4E9BC6F027AFB36A00AADD6F /* PhotoAlbumView.swift in Sources */,
+				4E9BC6F427AFD3BC00AADD6F /* FullInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

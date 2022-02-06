@@ -12,7 +12,9 @@ struct PersonsListView: View {
     var body: some View {
         NavigationView {
             List(persons) {person in
-                Text("ID: \(person.id) Full name: \(person.fullName)\n Email: \(person.email) Phone: \(person.phoneNumber)")
+                NavigationLink(destination: FullInfoView(person: person)) {
+                    Text("ID: \(person.id) Full name: \(person.fullName)\n Email: \(person.email) Phone: \(person.phoneNumber)")
+                }
             }
             .navigationTitle("Список контактов")
             .listStyle(.plain)
